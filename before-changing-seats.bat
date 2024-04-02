@@ -1,18 +1,22 @@
 @echo off
-chcp 65001 >> null 
-
-
-set "menu="
-set "menu===============================!newline!"
-set "menu=%menu%1. Git 설정 초기화!newline!"
-set "menu=%menu%2. VSCode 설정 초기화!newline!"
-set "menu=%menu%q. 종료!newline!"
-
+chcp 65001 > NUL
 
 :MENU
-echo ===============================
-echo '초기화할 설정을 선택해주세요.'
-echo ===============================
+echo ==============================
+<nul set /p "_demo=|                            |"
+echo.
+<nul set /p "_demo=|      싸피 자리 청소기      |"
+echo.
+<nul set /p "_demo=|                            |"
+echo.
+echo ==============================
+<nul set /p "_demo=|   1. Git 설정 초기화       |"
+echo.
+<nul set /p "_demo=|   2. VSCode 설정 초기화    |"
+echo.
+<nul set /p "_demo=|   q. 종료                  |"
+echo.
+echo ==============================
 set /p choice="원하는 작업을 선택하세요 (1 또는 2를 입력해주세요, 종료하려면 q를 입력해주세요): "
 
 if "%choice%"=="1" (
