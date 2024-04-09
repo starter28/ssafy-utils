@@ -6,3 +6,14 @@
   - Git 토큰 초기화
   - Vscode 개인 설정 초기화
   - (예정) 웹 브라우저 설정 초기화
+
+![before-changing-seats](res/before-changing-seats.png)
+
+
+### git-start-setting.bat
+- ssafy에서 새로운 자리에 Git 설정을 하는 배치 프로그램
+  - autocrlf 설정
+  - username, useremail 설정
+  - credential.helper 설정
+
+![git-start-setting](res/git-start-setting.png)
