@@ -26,9 +26,6 @@ git config --global user.name %name1%
 git config --global user.email %email1%
 git config --global credential.helper store
 
-echo .
-echo ..
-echo ...
 echo 계정 설정 완료
 
 for /l %%x in (1, 1, 3) do (echo.)
@@ -50,14 +47,7 @@ set NLM=^
 
 set NL=^^^%NLM%%NLM%^%NLM%%NLM%
 
-
-set concre=test%NL%test
-@REM echo | set /p _tmp=%cre1%%NL%> .git-credentials
-@REM echo | set /p _tmp=%cre2%>> .git-credentials
-
-@REM echo | set /p _tmp=%concre%> .git-credentials
-
-echo %concre%> .git-credentials
+echo %cre1%%NL%%cre2%%NL%> .git-credentials2
 
 echo .
 echo ..
