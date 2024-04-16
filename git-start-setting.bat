@@ -47,7 +47,7 @@ set NLM=^
 
 set NL=^^^%NLM%%NLM%^%NLM%%NLM%
 
-echo %cre1%%NL%%cre2%%NL%> .git-credentials2
+echo %cre1%%NL%%cre2%%NL%> .git-credentials
 
 echo .
 echo ..
